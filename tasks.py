@@ -22,7 +22,7 @@ def order_robots_from_RobotSpareBin():
     orders = read_csv_file()
     open_robot_order_website()
     complete_orders(orders)
-    archive_receipts()
+    archive_receipts() # Test
 
 def download_csv_file():
     """Downloads csv file from the given URL"""
@@ -92,4 +92,4 @@ def embed_screenshot_to_receipt(screenshot, pdf_file):
 
 def archive_receipts():
     lib = Archive()
-    lib.archive_folder_with_zip('./output/receipts', 'receipts.zip')
+    lib.archive_folder_with_zip('./output/receipts', 'output/receipts.zip')
